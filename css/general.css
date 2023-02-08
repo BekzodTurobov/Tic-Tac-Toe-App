@@ -1,0 +1,77 @@
+:root {
+  /* COLORS */
+  --color-white-base: #ffffff;
+
+  /* Greys */
+  --color-grey-50: #f9fafb;
+  --color-grey-100: #f2f4f7;
+  --color-grey-200: #eaecf0;
+  --color-grey-300: #d0d5dd;
+  --color-grey-400: #98a2b3;
+  --color-grey-500: #667085;
+  --color-grey-600: #475467;
+  --color-grey-700: #344054;
+  --color-grey-800: #1d2939;
+
+  /* Primary */
+  --color-primary-100: #f4ebff;
+  --color-primary-300: #d6bbfb;
+  --color-primary-600: #7f56d9;
+  --color-primary-700: #6941c6;
+  --color-primary-800: #53389e;
+  --color-primary-900: #42307d;
+
+  /* Violet */
+  --color-violet-800: #5720b7;
+
+  /* Purple */
+  --color-purple-100: #ebe9fe;
+  --color-purple-700: #5925dc;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem var(--color-primary-100);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  overflow: scroll;
+}
+
+.smooth {
+  animation: show 0.3s ease-out;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.error input {
+  border-color: red;
+}
+
+.error {
+  color: red;
+}
